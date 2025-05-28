@@ -1,4 +1,9 @@
-My_file = "/home/user/Desktop/sample.txt" 
+# Weixing added on 28 May
+import os
+
+# Weixing modified on 28 May:
+# Use relative paths so that sample.txt (located in the same directory as this script) can be found correctly on different computers
+My_file = os.path.join(os.path.dirname(__file__), "sample.txt") 
 
 print("Line\tChars\tUppercase\t% Upper")
 
